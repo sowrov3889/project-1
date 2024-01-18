@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowrov Fitness</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Baloo+Bhai+2&family=Playpen+Sans:wght@100;200;400&display=swap" rel="stylesheet">
+
+<style>
+    /* CSS reset */
+    body{
+        font-family: 'Baloo Bhai 2', sans-serif;
+        color: #a8f5ec;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/man-2604149_1920.jpg);
+        width: 1523px;
+        font-weight: bold;
+        /* height: 1080px; */
+    }
+
+    .left{
+        position: absolute;
+        left:  34px;
+        top: 20px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+
+    .left img{
+        width: 145px;
+
+    }
+    .left div{
+        font-size: 18px;
+        line-height: 34px;
+        text-align: center;
+    }
+    .right{
+        position: absolute;
+        right:  34px;
+        top: 20px;
+        /* border: 2px solid green; */
+        display: inline-block;
+    }
+    .mid{
+        font-weight: bold;
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid yellow; */
+        text-align: center;
+        
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a{
+        color: #a8f5ec;
+        text-decoration: none;
+        padding: 12px 14px;
+        font-size: 23px;
+    }
+
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        font-family: 'Baloo Bhai 2', sans-serif;
+        margin: 0px 2px;
+        background-color: black;
+        color: #a8f5ec;
+        padding: 1px 4px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(31, 29, 29);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 140px 60px;
+        padding: 30px ;
+        width: 33%;
+        
+        display: block;
+        border-radius: 20px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .from-group input{
+        font-family: 'Baloo Bhai 2', sans-serif;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 8px auto;
+        font-size: 21px;
+        border-radius: 11px;
+    } 
+
+    .container button{
+        display: block;
+        width: 43%;
+        margin: auto;
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo  -->
+        <div class="left">
+           <img src="img/gym.png" alt="">
+           <div>Sowrov's Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Rangamati now</h1>
+        <from action="noaction.php">
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Email Id">
+            </div>
+            <div class="from-group">
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit Now</button>
+        </from>
+    </div>
+</body>
+</html>
